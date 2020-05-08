@@ -72,7 +72,8 @@
 <p>4. <span>利用 puttygen.exe 將 id_rsa 轉為 Putty 可以解讀的 .ppk 格式, 並修改隨身系統的啟動批次檔案, 指定利用 putty 目錄下的 plink 執行 git 指令的網路代理設定.</span></p>
 <p>5. 利用 puttygen.exe 載入第二步驟所建立的 private key, 也就是 id_rsa.開啟 puttygen 之後, 以右下方的 load 載入 id_rsa, 成功載入後, 利用 save private key 按鈕, 將已經轉為 putty 格式的 .ppk 存檔. 此一 .ppk 檔案必須在設定 putty 中 github.com session 時, 在 Connection-&gt;SSH-&gt;Auth 項目下, 將轉檔後的 .ppk 指向 private key file for authentication 欄位. 並在 Connection-&gt;Proxy 項目下, 指定 Proxy type: HTTP, 並將 IPv6 代理主機設為 ::53 或 ::42 埠號設為 3128.</p>
 <p><span>6. 最後再將 wcmj2020 倉儲中 .git 目錄下的 config 檔案中的連線協定, 由 https 改為採 ssh 連線</span></p>
-<p><span>之後就可以透過近端的 .ppk private key 與 Github.com 上的 public key 對應, 無需輸入帳號密碼就可以進行 git push.</span></p><h1>電腦常用快捷鍵</h1>
+<p><span>之後就可以透過近端的 .ppk private key 與 Github.com 上的 public key 對應, 無需輸入帳號密碼就可以進行 git push.</span></p>
+<p>p.s.  若找不到.git<span>試著將隱藏目錄的設定移除, 看能否進入 .git 目錄, 然後看到 config 檔案.</span></p><h1>電腦常用快捷鍵</h1>
 <p>Windowss 標誌鍵 + Shift + S  == 選取某部分截圖</p>
 <p><span>Ctrl + X == 剪下選取的項目</span></p>
 <p><span></span><span>Ctrl + C (或 Ctrl + Insert) == 複製選取的項目</span></p>
