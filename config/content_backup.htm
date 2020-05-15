@@ -29,7 +29,8 @@
 <h2>SSH</h2>
 <p><b>Secure Shell</b><span>（安全外殼協定，簡稱</span><b>SSH</b><span>）是一種加密的</span><a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE" title="網路傳輸協定">網路傳輸協定</a><span>，可在不安全的網路中為網路服務提供安全的傳輸環境</span><span>。SSH通過在網路中建立</span><span class="ilh-all" data-foreign-title="secure channel" data-lang-code="en" data-lang-name="英語" data-orig-title="安全隧道"><span class="ilh-page"><a class="new" href="https://zh.wikipedia.org/w/index.php?title=%E5%AE%89%E5%85%A8%E9%9A%A7%E9%81%93&amp;action=edit&amp;redlink=1" original-title="安全隧道（頁面不存在）">安全隧道</a></span></span><span>來實現SSH客戶端與伺服器之間的連接</span><span>。雖然任何網路服務都可以通過SSH實現安全傳輸，SSH最常見的用途是遠端登入系統，人們通常利用SSH來傳輸</span><a href="https://zh.wikipedia.org/wiki/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2" title="命令行介面">命令行介面</a><span>和遠端執行命令。SSH使用頻率最高的場合是</span><a href="https://zh.wikipedia.org/wiki/%E7%B1%BBUnix%E7%B3%BB%E7%BB%9F" title="類Unix系統">類Unix系統</a><span>，但是</span><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/Windows" title="Windows">Windows</a><span>作業系統也能有限度地使用SSH。2015年，微軟宣布將在未來的作業系統中提供原生SSH協定支援</span><span>，</span><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/Windows" title="Windows">Windows</a><span><span> </span>10 1809版本已提供</span><a href="https://zh.wikipedia.org/wiki/OpenSSH" title="OpenSSH">OpenSSH</a><span>工具</span><span>。</span></p>
 <p>SSH以<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86" title="非對稱加密">非對稱加密</a>實現<a href="https://zh.wikipedia.org/wiki/%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81" title="身分驗證">身分驗證</a>。身分驗證有多種途徑，例如其中一種方法是使用自動生成的公鑰-私鑰對來簡單地加密網路連接，隨後使用密碼認證進行登入；另一種方法是人工生成一對公鑰和私鑰，通過生成的金鑰進行認證，這樣就可以在不輸入密碼的情況下登入。任何人都可以自行生成金鑰。公鑰需要放在待存取的電腦之中，而對應的私鑰需要由用戶自行保管。認證過程基於生成出來的私鑰，但整個認證過程中私鑰本身不會傳輸到網路中。</p>
-<p>SSH協定有兩個主要版本，分別是SSH-1和SSH-2。無論是哪個版本，核實未知金鑰來源都是重要的事情，因為SSH只驗證提供用戶是否擁有與公鑰相匹配的私鑰，只要接受公鑰而且金鑰匹配伺服器就會授予許可。這樣的話，一旦接受了惡意攻擊者的公鑰，那麼系統也會把攻擊者視為合法用戶。</p><h2>OSI模型</h2>
+<p>SSH協定有兩個主要版本，分別是SSH-1和SSH-2。無論是哪個版本，核實未知金鑰來源都是重要的事情，因為SSH只驗證提供用戶是否擁有與公鑰相匹配的私鑰，只要接受公鑰而且金鑰匹配伺服器就會授予許可。這樣的話，一旦接受了惡意攻擊者的公鑰，那麼系統也會把攻擊者視為合法用戶。</p>
+<h2>OSI模型</h2>
 <p><b>開放式系統互聯模型</b><span>（英語：</span><span lang="en"><b>O</b>pen<span> </span><b>S</b>ystem<span> </span><b>I</b>nterconnection Model</span><span>，縮寫：OSI；簡稱為</span><b>OSI模型</b><span>）是一種</span><a href="https://zh.wikipedia.org/wiki/%E6%A6%82%E5%BF%B5%E6%A8%A1%E5%9E%8B" title="概念模型">概念模型</a><span>，由</span><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86%E5%8C%96%E7%BB%84%E7%BB%87" title="國際標準化組織">國際標準化組織</a><span>提出，一個試圖使各種電腦在世界範圍內互連為網路的標準框架。</span></p>
 <p>OSI是一個定義良好的協定規範集，並有許多可選部分完成類似的任務。它定義了開放系統的階層、層次之間的相互關係以及各層所包括的可能的任務，作為一個框架來協調和組織各層所提供的服務。</p>
 <p>OSI參考模型並沒有提供一個可以實現的方法，而是描述了一些概念，用來協調行程間通訊標準的制定。即OSI參考模型並不是一個標準，而是一個在制定標準時所使用的概念性框架。</p>
@@ -47,7 +48,8 @@
 <h3>第6層 表達層</h3>
 <p><span class="mw-headline"><span>表達層（Presentation Layer）把資料轉換為能與接收者的系統格式相容並適合傳輸的格式。</span></span></p>
 <h3>第7層 應用層</h3>
-<p><span class="mw-headline"><span>應用層（Application Layer）提供為應用軟體而設的介面，以設定與另一應用軟體之間的通訊。例如: HTTP、HTTPS、FTP、TELNET、SSH、SMTP、POP3、HTML等。</span></span></p><h2>IPv6</h2>
+<p><span class="mw-headline"><span>應用層（Application Layer）提供為應用軟體而設的介面，以設定與另一應用軟體之間的通訊。例如: HTTP、HTTPS、FTP、TELNET、SSH、SMTP、POP3、HTML等。</span></span></p>
+<h2>IPv6</h2>
 <p><b>網際協定第6版</b>（英語：<span lang="en"><b>I</b>nternet<span> </span><b>P</b>rotocol<span> </span><b>v</b>ersion<span> </span><b>6</b></span>，縮寫：<b>IPv6</b>）是<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE" title="網際協定">網際協定</a>的最新版本，用作<a href="https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91" title="網際網路">網際網路</a>的<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E7%B5%A1%E5%B1%A4" title="網路層">網路層</a>協定。用它來取代<a href="https://zh.wikipedia.org/wiki/IPv4" title="IPv4">IPv4</a>主要是為了解決<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/IPv4%E5%9C%B0%E5%9D%80%E6%9E%AF%E7%AB%AD%E9%97%AE%E9%A2%98" title="IPv4位址枯竭問題">IPv4位址枯竭問題</a>，同時它也在其他方面對於IPv4有許多改進。</p>
 <p>IPv6的設計目的是取代IPv4，然而長期以來IPv4在網際網路流量中仍占據主要地位，IPv6的使用增長緩慢。在2019年12月，通過IPv6使用<a href="https://zh.wikipedia.org/wiki/Google" title="Google">Google</a>服務的用戶百分率首次超過30%。</p>
 <h2>IPv4</h2>
@@ -64,7 +66,52 @@
 <h2>DHCP</h2>
 <p>由於 IP 位址不夠，為了節省子網路中 IP 位址的使用量，可以設定網路中的一台主機做為指揮中心，稱為「動態主機組態協定伺服器（DHCP server）」或「DHCP 伺服器」。負責動態分配 IP 位址，當網路中有任何一台電腦要連線時，才向 DHCP 伺服器要求一個 IP 位址， DHCP 伺服器會從資料庫中找出一個目前尚未被使用的 IP 位址提供給該電腦使用，使用完畢後電腦再將這個 IP 位址還給 DHCP 伺服器，提供給其他上線的電腦使用。</p>
 <p>「動態主機組態協定（Dynamic Host Configuration Protocol, DHCP）」主要的功能是提供用戶端電腦動態的 IP 位址、子網路遮罩（Subnet mask）、預設閘道器（Default gateway）、DNS 伺服器的 IP 位址等，可以減少用戶端手動設定 IP 位址的麻煩，並且減少手動設定發生錯誤的機率，又可以節省 IP 位址的使用量。</p>
-<h1>課程進度</h1>
+<h1>電腦常用快捷鍵</h1>
+<p>Windowss 標誌鍵 + Shift + S  == 選取某部分截圖</p>
+<p><span>Ctrl + X == 剪下選取的項目</span></p>
+<p><span></span><span>Ctrl + C (或 Ctrl + Insert) == 複製選取的項目</span></p>
+<p><strong>Ctrl+N == <span>開啟新網頁。</span></strong></p>
+<p><strong><span>Ctrl+W == <span>關閉目前視窗。</span></span></strong></p>
+<p><span>Ctrl + V (或 Shift + Insert) == 貼上選取的項目</span></p>
+<p><span>Ctrl + Z == 復原動作</span></p>
+<p><span>Alt + Tab == 在開啟的應用程式之間切換</span></p>
+<p><span>Alt + F4 == 關閉使用中的項目，或結束使用中的應用程式</span></p>
+<p><span>Windows 標誌鍵 <span class="win-icon win-icon-WindowsLogo"></span><span><span> </span>+ L == 鎖定您的電腦</span></span></p>
+<p><span><span>Windows 標誌鍵 <span class="win-icon win-icon-WindowsLogo"></span><span><span> </span>+ D == 顯示或隱藏桌面</span></span></span></p>
+<p><span><span><span>F2 == 重新命名選取的項目</span></span></span></p>
+<p><span><span><span>F3 == 重新命名選取的項目</span></span></span></p>
+<p><span><span><span>F4 == 在 [檔案總管] 中顯示網址列清單</span></span></span></p>
+<p><span><span><span>F5 == 重新整理使用中視窗</span></span></span></p>
+<p><span><span><span>F6 == 重新整理使用中視窗</span></span></span></p>
+<p><span><span><span>F10 == 啟動使用中應用程式的功能表列</span></span></span></p>
+<p><span>Ctrl + Shift + Esc == 開啟 [工作管理員]。</span></p>
+<p><span>Windows 標誌鍵 <strong></strong><strong><span class="win-icon win-icon-WindowsLogo"></span></strong><span><span> </span>+ V == 開啟剪貼簿。</span></span></p>
+<p><span><span>Windows 標誌鍵 <strong></strong><strong><span class="win-icon win-icon-WindowsLogo"></span></strong><span><span> </span>+ U == 開啟 [輕鬆存取中心]。</span></span></span></p>
+<p><span><span><span>Windows 標誌鍵 <strong></strong><strong><span class="win-icon win-icon-WindowsLogo"></span></strong><span><span> </span>+ X == 開啟 [快速連結] 功能表。</span></span></span></span></p>
+<p><span><span><span><span>Windows 標誌鍵 <strong></strong><strong><span class="win-icon win-icon-WindowsLogo"></span></strong><span><span> </span>+ G == 開啟 [意見反應中樞] 並抓取螢幕擷取畫面。</span></span></span></span></span></p>
+<p><span><span><span><span><span>Windows 標誌鍵 <strong></strong><strong><span class="win-icon win-icon-WindowsLogo"></span></strong><span><span> </span>+ D == 顯示或隱藏桌面。</span></span></span></span></span></span></p>
+<h1>電腦構造</h1>
+<ol>
+<li><span color="#FF8080" size="2" style="color: #ff8080; font-size: small;">輸入單元</span><span size="2" style="font-size: small;">：負責將資料、程式及命令的輸入。如鍵盤、滑鼠、光筆及磁碟機等</span></li>
+<li><span color="#FF8080" size="2" style="color: #ff8080; font-size: small;">輸出單元</span><span size="2" style="font-size: small;">：負責輸出電腦所執行的結果，或顯示電腦系統的訊息，如印表機、喇叭及螢幕等。</span></li>
+<li><span color="#FF8080" size="2" style="color: #ff8080; font-size: small;">算術邏輯單元</span><span size="2" style="font-size: small;">：負責電腦內部之算術（加、減、乘、除）及邏輯（AND、OR、NOT）運算。</span></li>
+<li><span color="#FF8080" size="2" style="color: #ff8080; font-size: small;">控制單元</span><span size="2" style="font-size: small;">：負責分析、指揮及控制各單元的運作，它會適時遞送出控制訊號使電腦系統能正確的執行。</span></li>
+<li><span color="#FF8080" size="2" style="color: #ff8080; font-size: small;">記憶單元</span><span size="2" style="font-size: small;">：負責儲存程式或資料，又可分為主記憶體與輔助記憶體。主記憶體分為唯讀記憶體（ROM）只能讀不能寫、隨機存取記憶體（RAM）能讀能寫；輔助記憶體如磁碟、光碟等。</span></li>
+</ol>
+<p><span size="2" style="font-size: small;"><img alt="" height="408" src="/images/123.png" width="504"/></span></p>
+<h2>硬體(Hardware)</h2>
+<p><img alt="" height="361" src="/images/321.png" width="445"/></p><h3>機箱</h3>
+<p>電腦的許多硬體，如主機板、硬碟和電源等，都安放與固定在機箱當中。機箱是一個相對封閉的空間，箱體一般由<a href="https://zh.wikipedia.org/wiki/%E9%92%A2" title="鋼">鋼</a>和<a href="https://zh.wikipedia.org/wiki/%E9%93%9D" title="鋁">鋁</a>等金屬製成<sup class="reference" id="cite_ref-6"><a href="https://zh.wikipedia.org/wiki/%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91#cite_note-6">[6]</a></sup>（其他材料亦可用，但不多見），同時設有許多通風口，以促進箱內空氣流動，防止內部溫度過高。機箱的顏色、大小乃至形狀等可根據內部硬體之實際需要以及個人的喜好而變。</p>
+<p>目前市場比較普遍的機箱規格有<a href="https://zh.wikipedia.org/wiki/ATX%E8%A6%8F%E6%A0%BC" title="ATX規格">ATX規格</a>和<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/Micro_ATX" title="Micro ATX">Micro ATX</a>等2種，另外以<a href="https://zh.wikipedia.org/wiki/Mini-ITX" title="Mini-ITX">ITX</a>標準小型機箱也在流行趨勢中。</p><h3>主機板</h3>
+<p><span>主機板是計算機的主要</span><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E5%8D%B0%E5%88%B7%E9%9B%BB%E8%B7%AF%E6%9D%BF" title="印刷電路板">電路板</a><span>（PCB）。計算機的其他硬體一般直接插入到主機板中來交換資訊。主機板通常由</span><a href="https://zh.wikipedia.org/wiki/%E8%8A%AF%E7%89%87%E7%BB%84" title="晶片組">晶片組</a><span>、</span><a href="https://zh.wikipedia.org/wiki/BIOS" title="BIOS">BIOS</a><span>、</span><a href="https://zh.wikipedia.org/wiki/%E6%89%93%E5%8D%B0%E6%9C%BA" title="印表機">印表埠</a><span>、各種周邊裝置連接埠（如</span><a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E5%8D%A1" title="網卡">網路埠</a><span>、</span><a href="https://zh.wikipedia.org/wiki/%E5%A3%B0%E5%8D%A1" title="音效卡">Audio</a><span>、</span><a href="https://zh.wikipedia.org/wiki/USB" title="USB">USB</a><span>）、</span><a href="https://zh.wikipedia.org/wiki/PS/2" title="PS/2">PS/2</a><span>鍵盤/鼠標介面和PCIe/PCI擴展插槽等組成。有時為了減小主機板尺寸，節省成本也通過插到主機板的子板來擴充更多擴展槽。現時主流的主機板規格有</span><a href="https://zh.wikipedia.org/wiki/ATX%E8%A6%8F%E6%A0%BC" title="ATX規格">ATX規格</a><span>、</span><a href="https://zh.wikipedia.org/wiki/MicroATX" title="MicroATX">MicroATX</a><span>、</span><a href="https://zh.wikipedia.org/wiki/Mini-ITX" title="Mini-ITX">Mini-ITX</a><span>。</span></p>
+<p><span></span></p>
+<p><span></span></p><h3>中央處理器</h3>
+<h3>主記憶體</h3>
+<h3>電源供應器</h3>
+<h3>顯示器</h3>
+<h3>外部儲存媒體</h3><h2>軟體(software)</h2>
+<h2>韌體(firmware)</h2>
+<p><span size="2" style="font-size: small;"></span></p><h1>課程進度</h1>
 <h2>W6</h2>
 <p><span>1.將遠端的 wcmj2020 以 git clone 取下.</span></p>
 <p><span>     git clone <a href="https://github.com/%E5%AD%B8%E8%99%9F/wcmj2020.git">https://github.com/50833101/wcmj2020.git</a></span></p>
@@ -94,21 +141,5 @@
 <p>5. 利用 puttygen.exe 載入第二步驟所建立的 private key, 也就是 id_rsa.開啟 puttygen 之後, 以右下方的 load 載入 id_rsa, 成功載入後, 利用 save private key 按鈕, 將已經轉為 putty 格式的 .ppk 存檔. 此一 .ppk 檔案必須在設定 putty 中 github.com session 時, 在 Connection-&gt;SSH-&gt;Auth 項目下, 將轉檔後的 .ppk 指向 private key file for authentication 欄位. 並在 Connection-&gt;Proxy 項目下, 指定 Proxy type: HTTP, 並將 IPv6 代理主機設為 ::53 或 ::42 埠號設為 3128.</p>
 <p><span>6. 最後再將 wcmj2020 倉儲中 .git 目錄下的 config 檔案中的連線協定, 由 https 改為採 ssh 連線</span></p>
 <p><span>之後就可以透過近端的 .ppk private key 與 Github.com 上的 public key 對應, 無需輸入帳號密碼就可以進行 git push.</span></p>
-<p>p.s.  若找不到.git<span>試著將隱藏目錄的設定移除, 看能否進入 .git 目錄, 然後看到 config 檔案.</span></p><h1>電腦常用快捷鍵</h1>
-<p>Windowss 標誌鍵 + Shift + S  == 選取某部分截圖</p>
-<p><span>Ctrl + X == 剪下選取的項目</span></p>
-<p><span></span><span>Ctrl + C (或 Ctrl + Insert) == 複製選取的項目</span></p>
-<p><span>Ctrl + V (或 Shift + Insert) == 貼上選取的項目</span></p>
-<p><span>Ctrl + Z == 復原動作</span></p>
-<p><span>Alt + Tab == 在開啟的應用程式之間切換</span></p>
-<p><span>Alt + F4 == 關閉使用中的項目，或結束使用中的應用程式</span></p>
-<p><span>Windows 標誌鍵 <span class="win-icon win-icon-WindowsLogo"></span><span><span> </span>+ L == 鎖定您的電腦</span></span></p>
-<p><span><span>Windows 標誌鍵 <span class="win-icon win-icon-WindowsLogo"></span><span><span> </span>+ D == 顯示或隱藏桌面</span></span></span></p>
-<p><span><span><span>F2 == 重新命名選取的項目</span></span></span></p>
-<p><span><span><span>F3 == 重新命名選取的項目</span></span></span></p>
-<p><span><span><span>F4 == 在 [檔案總管] 中顯示網址列清單</span></span></span></p>
-<p><span><span><span>F5 == 重新整理使用中視窗</span></span></span></p>
-<p><span><span><span>F6 == 重新整理使用中視窗</span></span></span></p>
-<p><span><span><span>F10 == 啟動使用中應用程式的功能表列</span></span></span></p>
-<p></p>
+<p>p.s.  若找不到.git<span>試著將隱藏目錄的設定移除, 看能否進入 .git 目錄, 然後看到 config 檔案.</span></p>
 <p><span><span><span><span>  </span></span></span></span></p>
