@@ -8,7 +8,7 @@
 &lt;p&gt;
 W10-W12課程(ssh)&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;下載[putty]並利用putty建立private key及public key&lt;/p&gt;
+&lt;p&gt;下載&lt;a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html"&gt;putty&lt;/a&gt;並利用putty建立private key及public key&lt;/p&gt;
 &lt;p&gt;利用shell指令將兩把key轉成id_rsa&lt;/p&gt;
 &lt;p&gt;將id_rsa.pub抓出到編輯器並複製貼到github的ssh key上&lt;/p&gt;
 &lt;p&gt;將id_rsa經過puttygen.exe轉為putty接受的形式&lt;/p&gt;
