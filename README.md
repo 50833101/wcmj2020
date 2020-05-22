@@ -1,3 +1,3 @@
-# wcmj2020 w10
+# wcmj2020
 
 https://50833101.github.io/wcmj2020/
