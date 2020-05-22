@@ -1,0 +1,223 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>50833101 網際內容管理系統</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">50833101 網際內容管理系統</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='網際網路.html'>網際網路</a><ul class='dropdown'><li><a href='SSH.html'>SSH</a><li class='has-children'><a href='OSI模型.html'>OSI模型</a><ul class='dropdown'><li><a href='第1層 實體層.html'>第1層 實體層</a><li><a href='第2層 資料連結層.html'>第2層 資料連結層</a><li><a href='第3層 網路層.html'>第3層 網路層</a><li><a href='第4層 傳輸層.html'>第4層 傳輸層</a><li><a href='第5層 會議層.html'>第5層 會議層</a><li><a href='第6層 表達層.html'>第6層 表達層</a><li><a href='第7層 應用層.html'>第7層 應用層</a></li></ul><li><a href='IPv6.html'>IPv6</a><li><a href='IPv4.html'>IPv4</a><li><a href='Proxy.html'>Proxy</a><li><a href='NAT.html'>NAT</a><li><a href='DHCP.html'>DHCP</a></li></ul><li><a href='電腦常用快捷鍵.html'>電腦常用快捷鍵</a><li class='has-children'><a href='電腦構造.html'>電腦構造</a><ul class='dropdown'><li class='has-children'><a href='硬體(Hardware).html'>硬體(Hardware)</a><ul class='dropdown'><li><a href='機箱.html'>機箱</a><li><a href='主機板.html'>主機板</a><li><a href='中央處理器.html'>中央處理器</a><li><a href='主記憶體.html'>主記憶體</a><li><a href='電源供應器.html'>電源供應器</a><li><a href='顯示器.html'>顯示器</a></li></ul><li class='has-children'><a href='軟體(software).html'>軟體(software)</a><ul class='dropdown'><li><a href='系統軟體.html'>系統軟體</a><li><a href='應用軟體.html'>應用軟體</a><li><a href='惡意軟體.html'>惡意軟體</a></li></ul><li><a href='韌體(firmware).html'>韌體(firmware)</a></li></ul><li class='has-children'><a href='課程進度.html'>課程進度</a><ul class='dropdown'><li><a href='W6.html'>W6</a><li><a href='W7.html'>W7</a><li><a href='W8.html'>W8</a><li><a href='W9.html'>W9</a><li><a href='W10.html'>W10</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">系統軟體 << <a href='系統軟體.html'>Previous</a> <a href='惡意軟體.html'>Next</a> >> 惡意軟體<br /><h1>應用軟體</h1>
+<p><b>應用程式</b>（英語：<span lang="en">application program</span>）或<b>應用軟體</b>（<span lang="en">application software</span>），簡稱<b>應用</b>（<span lang="en">app</span>），是<a href="https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6" title="軟體">電腦軟體</a>的主要分類之一，是指為針對使用者的某種特殊應用目的所撰寫的電腦程式，例如<a class="new" href="https://zh.wikipedia.org/w/index.php?title=%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%99%A8&amp;action=edit&amp;redlink=1" title="文字處理器（頁面不存在）">文字處理器</a>，表格，會計應用，瀏覽器，媒體播放器，航空飛行模擬器，命令行遊戲，圖像編輯器等。與之相對應的是主要功能為驅動電腦執行的系統軟體。或者說，應用軟體可以直接完成終端用戶的工作。從某種意義上來講，系統軟體是為應用軟體服務的，應用軟體才是真正直接 提高用戶工作的。</p>
+<p>應用軟體可能與電腦及其系統軟體相捆綁，也可以被分開發布，並且可能以私有、開源或通用專案的形式編寫。<sup class="reference" id="cite_ref-3"><a href="https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F#cite_note-3">[3]</a></sup>為行動平台所編寫的應用被稱為行動應用。</p>
+<p>從目前的電腦應用現狀來看，業內已有各種各樣的應用軟體，許多專家也從不同的角度提出了多種不同的應用軟體分類方式。</p>
+<p>應用軟體是為了某種特定的用途而被開發的軟體。它可以是一個特定的程式，比如一個圖片檢視器。也可以是一組功能聯絡緊密，可以互相協同運作的程式的集合，比如<a href="https://zh.wikipedia.org/wiki/%E5%BE%AE%E8%BD%AF" title="微軟">微軟</a>的<a href="https://zh.wikipedia.org/wiki/Microsoft_Office" title="Microsoft Office">Office</a>軟體。也可以是一個由眾多獨立程式組成的龐大的軟體系統，比如<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%BA%93" title="資料庫">資料庫</a>管理系統。</p>
+<p>較常見的有</p>
+<ol>
+<li><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E6%96%87%E6%9B%B8%E8%99%95%E7%90%86%E5%99%A8" title="文書處理器">文書處理軟體</a>如<a href="https://zh.wikipedia.org/wiki/Microsoft_Office" title="Microsoft Office">Office</a>、<a href="https://zh.wikipedia.org/wiki/GNOME_Office" title="GNOME Office">GNOME Office</a>、<span> </span><a href="https://zh.wikipedia.org/wiki/KOffice" title="KOffice">KOffice</a>、<a href="https://zh.wikipedia.org/wiki/LibreOffice" title="LibreOffice">LibreOffice</a>、<a href="https://zh.wikipedia.org/wiki/Google_Docs" title="Google Docs">Google Docs</a>、<a href="https://zh.wikipedia.org/wiki/WPS_Office" title="WPS Office">WPS Office</a></li>
+<li><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E9%97%9C%E8%81%AF%E5%BC%8F%E8%B3%87%E6%96%99%E5%BA%AB" title="關聯式資料庫">關聯式資料庫</a>如<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/Oracle_Database" title="Oracle Database">Oracle Database</a>資料庫、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/SQL_Server" title="SQL Server">SQL Server</a>資料庫</li>
+<li><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E9%9B%BB%E8%85%A6%E8%BC%94%E5%8A%A9%E8%A8%AD%E8%A8%88" title="電腦輔助設計">電腦輔助設計</a>如<a href="https://zh.wikipedia.org/wiki/CATIA" title="CATIA">CATIA</a>、<a href="https://zh.wikipedia.org/wiki/AutoCAD" title="AutoCAD">AutoCAD</a>、<a href="https://zh.wikipedia.org/wiki/FreeCAD" title="FreeCAD">FreeCAD</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1" title="程式設計">電腦程式設計</a>如<a href="https://zh.wikipedia.org/wiki/C%E8%AF%AD%E8%A8%80" title="C語言">C</a>/<a href="https://zh.wikipedia.org/wiki/C%2B%2B" title="C++">C++</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E7%B5%84%E5%90%88%E8%AA%9E%E8%A8%80" title="組合語言">組合語言</a>、<a href="https://zh.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a><span> </span>、<span> </span><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/Swift%E8%AA%9E%E8%A8%80" title="Swift語言">Swift</a>、<a href="https://zh.wikipedia.org/wiki/JavaScript" title="JavaScript">JavaScript</a>、<a href="https://zh.wikipedia.org/wiki/Java" title="Java">Java</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/BitTorrent%E5%AE%A2%E6%88%B7%E7%AB%AF" title="BitTorrent客戶端">P2P軟體</a>如<a href="https://zh.wikipedia.org/wiki/BitTorrent_(%E8%BD%AF%E4%BB%B6)" title="BitTorrent (軟體)">BitTorrent</a>、<span> </span><a href="https://zh.wikipedia.org/wiki/%CE%9CTorrent" title="ΜTorrent">µTorrent</a><span> </span>、<a href="https://zh.wikipedia.org/wiki/Foxy" title="Foxy">Foxy</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E6%AF%94%E7%89%B9%E7%B2%BE%E9%9D%88" title="比特精靈">比特精靈</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/Vuze_(%E8%BB%9F%E9%AB%94)" title="Vuze (軟體)">Vuze</a>、<span> </span><a href="https://zh.wikipedia.org/wiki/Free_Download_Manager" title="Free Download Manager">Free Download Manager</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%9C%96%E5%83%8F%E8%BB%9F%E4%BB%B6" title="圖像軟體">影像處理軟體</a>如<a href="https://zh.wikipedia.org/wiki/Adobe_Photoshop" title="Adobe Photoshop">Photoshop</a>、<a href="https://zh.wikipedia.org/wiki/CorelDRAW" title="CorelDRAW">CorelDRAW</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/Painter" title="Painter">Corel painter</a>、<a href="https://zh.wikipedia.org/wiki/GIMP" title="GIMP">GIMP</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/MAYA" title="MAYA">MAYA</a>、<a href="https://zh.wikipedia.org/wiki/Softimage" title="Softimage">Softimage</a>、<a href="https://zh.wikipedia.org/wiki/3ds_Max" title="3ds Max">3ds Max</a>、<a href="https://zh.wikipedia.org/wiki/Blender" title="Blender">Blender</a>、<a href="https://zh.wikipedia.org/wiki/Softimage" title="Softimage">xsi</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/Lightwave" title="Lightwave">lightwave</a>、<a href="https://zh.wikipedia.org/wiki/Cinema_4D" title="Cinema 4D">Cinema 4D</a>、<a href="https://zh.wikipedia.org/wiki/Houdini" title="Houdini">Houdini</a>、<a href="https://zh.wikipedia.org/wiki/Krita" title="Krita">Krita</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E5%9B%BE%E5%BD%A2" title="動態圖形">動態圖形</a>和<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E8%A6%96%E8%A6%BA%E7%89%B9%E6%95%88" title="視覺特效">視覺特效</a>如<a href="https://zh.wikipedia.org/wiki/Adobe_After_Effects" title="Adobe After Effects">After Effects</a>、<a href="https://zh.wikipedia.org/wiki/Shake" title="Shake">shake</a></li>
+<li><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E9%A0%81%E7%80%8F%E8%A6%BD%E5%99%A8" title="網頁瀏覽器">網頁瀏覽軟體</a>如<a href="https://zh.wikipedia.org/wiki/Internet_Explorer" title="Internet Explorer">Internet Explorer</a>、<a href="https://zh.wikipedia.org/wiki/Microsoft_Edge" title="Microsoft Edge">Edge</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/Firefox" title="Firefox">Firefox</a>、<a href="https://zh.wikipedia.org/wiki/Google_Chrome" title="Google Chrome">Chrome</a>、<a href="https://zh.wikipedia.org/wiki/Safari" title="Safari">Safari</a>、<a href="https://zh.wikipedia.org/wiki/Opera%E9%9B%BB%E8%85%A6%E7%80%8F%E8%A6%BD%E5%99%A8" title="Opera電腦瀏覽器">Opera</a>、<a href="https://zh.wikipedia.org/wiki/Konqueror" title="Konqueror">Konqueror</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%8D%B3%E6%99%82%E9%80%9A%E8%A8%8A" title="即時通訊">網路通訊軟體</a>如<a href="https://zh.wikipedia.org/wiki/LINE" title="LINE">Line</a>、<a href="https://zh.wikipedia.org/wiki/ICQ" title="ICQ">ICQ</a>、<a href="https://zh.wikipedia.org/wiki/MSN" title="MSN">Windows Live Messenger</a>、<a href="https://zh.wikipedia.org/wiki/UUCall" title="UUCall">UUcall</a>、<a href="https://zh.wikipedia.org/wiki/Skype" title="Skype">Skype</a>、<a href="https://zh.wikipedia.org/wiki/Yahoo!_Messenger" title="Yahoo! Messenger">Yahoo! Messenger</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/QQ" title="QQ">QQ</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/AOL_Instant_Messenger" title="AOL Instant Messenger">AOL Instant Messenger</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%AA%92%E4%BD%93%E6%92%AD%E6%94%BE%E5%99%A8" title="媒體播放器">媒體播放器</a>如<b><a href="https://zh.wikipedia.org/wiki/Media_Player_Classic_Home_Cinema" title="Media Player Classic Home Cinema">MPC-HC</a></b>、<a href="https://zh.wikipedia.org/wiki/MPlayer" title="MPlayer">MPlayer</a>、<a href="https://zh.wikipedia.org/wiki/RealPlayer" title="RealPlayer">RealPlayer</a>、<a href="https://zh.wikipedia.org/wiki/GOM_Player" title="GOM Player">GOM</a>、<a href="https://zh.wikipedia.org/wiki/VLC%E5%A4%9A%E5%AA%92%E9%AB%94%E6%92%AD%E6%94%BE%E5%99%A8" title="VLC多媒體播放器">VLC</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/WMP" title="WMP">WMP</a>、<a href="https://zh.wikipedia.org/wiki/%E6%9A%B4%E9%A3%8E%E5%BD%B1%E9%9F%B3" title="暴風影音">暴風影音</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E9%A3%8E%E9%9B%B7%E5%BD%B1%E9%9F%B3" title="風雷影音">風雷影音、</a><a href="https://zh.wikipedia.org/wiki/Winamp" title="Winamp">Winamp</a>、<a href="https://zh.wikipedia.org/wiki/Foobar2000" title="Foobar2000">Foobar2000</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%8B%E8%BD%BD%E7%AE%A1%E7%90%86%E7%A8%8B%E5%BA%8F%E6%AF%94%E8%BE%83" title="下載管理程式比較">下載管理軟體</a>如<a href="https://zh.wikipedia.org/wiki/Free_Download_Manager" title="Free Download Manager">Free Download Manager</a>、<a href="https://zh.wikipedia.org/wiki/Internet_Download_Manager" title="Internet Download Manager">IDM</a></li>
+<li><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%E5%AE%A2%E6%88%B7%E7%AB%AF" title="電子郵件客戶端">電子郵件</a>如<a href="https://zh.wikipedia.org/wiki/Outlook.com" title="Outlook.com">Outlook.com</a>、<a href="https://zh.wikipedia.org/wiki/Windows_Live_Mail" title="Windows Live Mail">Windows Live Mail</a>、<a href="https://zh.wikipedia.org/wiki/Outlook_Express" title="Outlook Express">Outlook Express</a>、<a href="https://zh.wikipedia.org/wiki/Foxmail" title="Foxmail">Foxmail</a>、<a href="https://zh.wikipedia.org/wiki/Mozilla_Thunderbird" title="Mozilla Thunderbird">ThunderBird</a>、<a href="https://zh.wikipedia.org/wiki/Dreammail" title="Dreammail">Dreammail</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/KMail" title="KMail">KMail</a></li>
+<li><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E9%98%B2%E6%AF%92%E8%BB%9F%E9%AB%94" title="防毒軟體">資訊安全軟體</a>如<a href="https://zh.wikipedia.org/wiki/ESET" title="ESET">ESET</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/360%E5%AE%89%E5%85%A8%E8%A1%9B%E5%A3%AB" title="360安全衛士">360安全衛士</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/Avira_AntiVir" title="Avira AntiVir">德國小紅傘</a>、<a class="mw-disambig" href="https://zh.wikipedia.org/wiki/%E5%8D%A1%E5%B7%B4%E6%96%AF%E5%9F%BA" title="卡巴斯基">卡巴斯基</a>、<a href="https://zh.wikipedia.org/wiki/PC-cillin" title="PC-cillin">PC-cillin</a>、<a href="https://zh.wikipedia.org/wiki/%E8%AB%BE%E9%A0%93%E9%98%B2%E6%AF%92" title="諾頓防毒">諾頓防毒</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/BitDefender" title="BitDefender">BitDefender</a>、<a href="https://zh.wikipedia.org/wiki/%E7%91%9E%E6%98%9F" title="瑞星">瑞星防毒</a>、<a href="https://zh.wikipedia.org/wiki/%E9%87%91%E5%B1%B1%E6%AF%92%E9%9C%B8" title="金山毒霸">金山毒霸</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%99%9B%E6%93%AC%E6%A9%9F%E5%99%A8" title="虛擬機器">虛擬機器</a>如<a href="https://zh.wikipedia.org/wiki/VMware" title="VMware">VMware</a>、<a href="https://zh.wikipedia.org/wiki/VirtualBox" title="VirtualBox">VirtualBox</a>、<a href="https://zh.wikipedia.org/wiki/Microsoft_Virtual_PC" title="Microsoft Virtual PC">Microsoft Virtual PC</a>、<a href="https://zh.wikipedia.org/wiki/Bochs" title="Bochs">Bochs</a></li>
+<li><a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E8%BC%B8%E5%85%A5%E6%B3%95" title="輸入法">輸入法</a>軟體如<a href="https://zh.wikipedia.org/wiki/%E6%96%B0%E9%85%B7%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95" title="新酷音輸入法">新酷音輸入法</a>、<a class="mw-redirect" href="https://zh.wikipedia.org/wiki/%E8%B0%B7%E6%AD%8C%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95" title="Google拼音輸入法">Google拼音輸入法</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%AE%9E%E6%97%B6%E8%AE%A1%E7%AE%97" title="即時計算">實時控制系統</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%95%B8%E4%BD%8D%E5%AD%B8%E7%BF%92" title="數位學習">教育軟體</a></li>
+</ol><br />系統軟體 << <a href='系統軟體.html'>Previous</a> <a href='惡意軟體.html'>Next</a> >> 惡意軟體</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
