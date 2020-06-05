@@ -147,7 +147,7 @@ userapp = Blueprint('user', __name__, url_prefix='/user', template_folder='templ
 def index():
     user = "Yen"
     # 若 template 檔案名稱與位於外部 templates 目錄中的檔案同名, 則取外部的 template
-    return render_template('index.html', user=user)
+    return render_template('g1index.html', user=user)
 </t>
 <t tx="leo.20190603200801.3">@userapp.route('/threegear', defaults={'n1':15,'n2':20,'n3':18})
 @userapp.route('/threegear/&lt;n1&gt;/&lt;n2&gt;/&lt;n3&gt;')
@@ -332,7 +332,7 @@ config_dir = _curdir + "/config/"
 <t tx="leo.20190603200835.2">class Init(object):
     # uwsgi as static class variable, can be accessed by Init.uwsgi
     uwsgi = False
-    site_title = "CMSiMDE"
+    site_title = "yfrtyurftft"
     @others
 </t>
 <t tx="leo.20190603200835.3">def __init__(self):
@@ -387,8 +387,8 @@ make.start()
 </t>
 <t tx="leo.20190603201017.1">from __future__ import unicode_literals
 
-AUTHOR = 'KMOL'
-SITENAME = 'CMSimfly 網際內容管理'
+AUTHOR = '50833101'
+SITENAME = 'wcmj2020 課程網誌'
 # 不要用文章所在目錄作為類別
 USE_FOLDER_AS_CATEGORY = False
 
@@ -477,7 +477,7 @@ from pelicanconf import *
 # 因為 publishconf.py 在 pelicanconf.py 之後, 因此若兩處有相同變數的設定, 將以較後讀入的 publishconf.py 中的設定為主.
 
 # 將所有靜態 html 檔案移到 blog 子目錄
-SITEURL = 'https://chiamingyen.github.io/cmsimfly/blog'
+SITEURL = 'https://50833101.github.io/wcmj2020/blog'
 # 此設定用於將資料送到 gh-pages, 因此使用絕對 URL 設定
 RELATIVE_URLS = False
 
