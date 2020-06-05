@@ -62,12 +62,15 @@
 <v t="leo.20180423103639.1"><vh>wcmj2020 課程</vh>
 <v t="leo.20180909205246.1"><vh>@clean 20200522-1.md</vh>
 <v t="leo.20200529161702.1"><vh>W1-W5</vh></v>
+<v t="leo.20200605154849.1"><vh>425183105003119609</vh></v>
 </v>
 <v t="leo.20200522140447.1"><vh>@clean 20200522-2.md</vh>
 <v t="leo.20200529161627.1"><vh>W6-W9</vh></v>
+<v t="leo.20200605075038.1"><vh>2802333636736013691</vh></v>
 </v>
 <v t="leo.20200522144856.1"><vh>@clean 20200522-3.md</vh>
 <v t="leo.20200529161535.1"><vh>W10-W12</vh></v>
+<v t="leo.20200605075050.1"><vh>5479696101102818489</vh></v>
 </v>
 </v>
 </v>
@@ -428,6 +431,9 @@ Ctrl+D  將節點向下(down)移動</t>
 6.  動態系統維護後, 利用 generate_pages 轉為靜態.
 
 7.  git add ./git commit -m "commit message"/git push</t>
+<t tx="leo.20200605075038.1"></t>
+<t tx="leo.20200605075050.1"></t>
+<t tx="leo.20200605154849.1"></t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
