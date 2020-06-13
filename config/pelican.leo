@@ -72,6 +72,9 @@
 <v t="leo.20200529161535.1"><vh>W10-W12</vh></v>
 <v t="leo.20200605075050.1"><vh>5479696101102818489</vh></v>
 </v>
+<v t="leo.20200613133750.1"><vh>@clean 20200613.md</vh>
+<v t="leo.20200613133830.1"><vh>W13-W14</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -434,6 +437,57 @@ Ctrl+D  將節點向下(down)移動</t>
 <t tx="leo.20200605075038.1"></t>
 <t tx="leo.20200605075050.1"></t>
 <t tx="leo.20200605154849.1"></t>
+<t tx="leo.20200613133750.1">@language md
+---
+Title: WCMJ2020 課程
+Date: 2020-06-13 13:40
+Category: Misc
+Tags: 2020WCMJ
+Slug: 2020-wcmj-w13_w14-summary
+Author: 50833101
+---
+
+W13-W14
+
+
+利用leo editer將pelican blog跟google blogger同步
+[google blogger]:https://www.blogger.com/about/?hl=zh-TW
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+@others</t>
+<t tx="leo.20200613133830.1">W13-W14課程
+----
+
+隨身程式系統必須安裝 google-api-python-client 與 oauth2client
+
+在leo editer 建立add_to_blogger 及edit_to_blogger 兩個按鈕
+
+將網站上的按鈕內容複製貼上到leo editer 的按鈕內容裡
+
+利用學生帳號登入google blogger api
+
+開啟blogger API服務
+
+並建立一個Desktop client的憑證
+
+將其下載並命名為client_secrets.json
+
+使用者完成 client_secrets.json 設定後, 必須將檔案存在倉儲目錄外部
+
+即可使用add_to_blogger按鈕新增網誌至google blogger
+
+使用edit_to_blogger按鈕可將更新後的網誌同步至google blogger
+
+
+
+
+
+
+
+[網站]:http://mde.tw/wcmj2020/content/W12-W13.html
+[google blogger api]:https://accounts.google.com/signin/v2/identifier?service=cloudconsole&amp;passive=1209600&amp;osid=1&amp;continue=https%3A%2F%2Fconsole.developers.google.com%2Fprojectselector2%2Fapis%2Fcredentials%2Fconsent%3Fsupportedpurview%3Dproject%26ref%3Dhttps%3A%2F%2Flocalhost%3A9443%2Fget_page%2FW13&amp;followup=https%3A%2F%2Fconsole.developers.google.com%2Fprojectselector2%2Fapis%2Fcredentials%2Fconsent%3Fsupportedpurview%3Dproject%26ref%3Dhttps%3A%2F%2Flocalhost%3A9443%2Fget_page%2FW13&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin
+[google blogger]:https://www.blogger.com/about/?hl=zh-TW
+</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
